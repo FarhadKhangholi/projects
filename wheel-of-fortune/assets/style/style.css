@@ -1,0 +1,52 @@
+.wheel-img {
+   width: 420px;
+}
+
+.moving {
+   transition: 5s cubic-bezier(0, 1.04, 1, 1);
+}
+
+.details {
+   height: 50px;
+}
+
+.selected-users {
+   position: absolute;
+   left: 20px;
+   width: 300px;
+}
+
+.all-users {
+   position: absolute;
+   right: 20px;
+   width: 300px;
+}
+
+ul {
+   height: 640px;
+   overflow: auto;
+}
+
+
+li {
+   z-index: 100;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+li:hover {
+   background-color: rgb(204, 204, 204);
+}
+
+
+
+.user {
+   height: 100vh;
+}
+
+.back-btn {
+   position: fixed;
+   top: 100px;
+   right: 200px;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://code.jquery.com/jquery-3.7.1.min.js"
+         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+         crossorigin="anonymous"
+      ></script>
+      <script src="assets/script/script3.js" defer></script>
+      <link rel="stylesheet" href="assets/style/style.css" />
+   </head>
+   <body>
+      <section>
+         <figure class="selected-users">
+            <div class="list d-flex justify-content-between align-items-center">
+               <figcaption class="mb-3 fw-bold fs-4 mt-0">Selected users</figcaption>
+               <button class="mb-3 btn btn-danger" id="clear-history">clear all</button>
+            </div>
+            <ul class="list list-group" id="selected-users">
+               <!-- <li class="list-group-item">
+                  ID: 6 <br />
+                  Name: Farhad khangholi <br />
+                  Email: farhad.khangholi@gmail.com
+               </li> -->
+            </ul>
+         </figure>
+         <figure class="all-users">
+            <figcaption class="mb-3 fw-bold fs-4 mt-0">All users</figcaption>
+            <ul class="list list-group" id="all-users">
+               <!-- <li class="list-group-item">
+                  ID: 6 <br />
+                  Name: Farhad khangholi <br />
+                  Email: farhad.khangholi@gmail.com
+               </li> -->
+            </ul>
+         </figure>
+         <div class="container-md">
+            <div class="wheel d-flex align-items-center justify-content-center mt-5 me-3">
+               <img src="assets/images/0000.png" alt="" class="wheel-img moving" id="wheel" />
+               <img src="assets/images/01.png" alt="" class="wheel-img position-absolute" />
+            </div>
+            <div class="details d-flex align-items-center, justify-content-center gap-5">
+               <button class="btn btn-primary" id="go-btn">GO</button>
+               <h1 id="number">Last selected id:</h1>
+            </div>
+         </div>
+      </section>
+   </body>
+</html>

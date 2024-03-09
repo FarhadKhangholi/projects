@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+         crossorigin="anonymous"
+      ></script>
+      <script src="assets/script/script.js" defer></script>
+      <link rel="stylesheet" href="assets/style/style.css" />
+   </head>
+   <body>
+      <!-- ----------  navbar ----------- -->
+      <section class="navigation-bar bg-light">
+         <div class="top-bar-container container-fluid d-none d-lg-block">
+            <div class="top-bar d-flex justify-content-between align-items-center px-3">
+               <div class="social">
+                  <a href="#" class="ms-1">
+                     <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" class="ms-1">
+                     <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#" class="ms-1">
+                     <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#" class="ms-1">
+                     <i class="bi bi-linkedin"></i>
+                  </a>
+               </div>
+               <p class="noti mt-3 text-secondary">10% cash back and Free shipping, This week only!</p>
+               <div class="lang-currency d-flex">
+                  <select class="form-select form-select-sm me-2" aria-label="Default select example">
+                     <option selected>USD $</option>
+                     <option value="1">GBP £</option>
+                     <option value="2">EUR €</option>
+                  </select>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                     <option selected>English</option>
+                     <option value="1">Français</option>
+                     <option value="2">فارسی</option>
+                     <option value="3">Español</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+         <div class="mid-bar-container container-fluid d-none d-md-block">
+            <div class="mid-bar d-flex justify-content-between align-items-center px-3 py-1">
+               <div class="brand navbar-brand" id="brand">
+                  <a href="#">
+                     <img src="assets/images/logo.png" alt="Brand" style="height: 52px" />
+                     <img src="assets/images/logo-hover.png" alt="Brand" style="height: 52px" id="brand-hover" />
+                  </a>
+               </div>
+               <form action="search">
+                  <div class="input-group input-group">
+                     <div class="input-group-text input-group-text-first">All <i class="bi bi-caret-down-fill ms-2"></i></div>
+                     <input type="text" name="search" id="search" placeholder="Seach for your product" class="form-control" />
+                     <div class="input-group-text"><i class="bi bi-search"></i></div>
+                  </div>
+               </form>
+               <ul class="d-none d-lg-flex flex-wrap align-items-center justify-content-end ac-bg p-0 m-0" style="width: 320px">
+                  <li class="nav-item d-flex align-items-center text-muted me-3">
+                     <a class="nav-link" aria-current="page" href="#">
+                        <i class="bi bi-person-fill"></i>
+                        login/register</a
+                     >
+                  </li>
+                  <li class="nav-item d-flex align-items-center text-muted">
+                     <a class="nav-link" href="#">
+                        <i class="bi bi-bag-fill"></i>
+                        Bag</a
+                     >
+                     <div class="badge badge-secondary rounded-pill bg-secondary ms-2">0</div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+               <div class="brand navbar-brand d-inline-block d-md-none">
+                  <a href="#">
+                     <img src="assets/images/logo.png" alt="Brand" style="height: 52px" />
+                  </a>
+               </div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse bg-light" id="navbarNav">
+                  <ul class="navbar-nav mx-auto">
+                     <li class="nav-item me-2 mt-4 mt-md-0">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                     </li>
+                     <li class="nav-item me-2 mt-4 mt-md-0">
+                        <a class="nav-link" href="#">Features</a>
+                     </li>
+                     <li class="nav-item me-2 mt-4 mt-md-0">
+                        <a class="nav-link" href="#">Pricing</a>
+                     </li>
+                     <li class="nav-item me-2 mt-4 mt-md-0">
+                        <a class="nav-link" href="#">Disabled</a>
+                     </li>
+                     <li class="nav-item me-2 mt-4 mt-md-0">
+                        <a class="nav-link" href="#">Disabled</a>
+                     </li>
+                     <li class="nav-item me-2 my-4 my-md-0">
+                        <a class="nav-link" href="#">Disabled</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </section>
+      <section class="item-details my-5">
+         <div class="product container-md p-1 p-sm-5 bg-light">
+            <div class="row mx-auto">
+               <div class="col-lg-5 bg-white">
+                  <div class="product-img-container">
+                     <div id="carouselExampleIndicators" class="carousel slide carousel-dark">
+                        <div class="carousel-indicators">
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner p-5">
+                           <div class="carousel-item active">
+                              <img src="assets/images/special-2.jpg" class="d-block w-100" alt="..." />
+                           </div>
+                           <div class="carousel-item">
+                              <img src="assets/images/special-3.jpg" class="d-block w-100" alt="..." />
+                           </div>
+                           <div class="carousel-item">
+                              <img src="assets/images/special-4.jpg" class="d-block w-100" alt="..." />
+                           </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="item-detail col-lg-7 bg-white">
+                  <div class="ms-0 ms-lg-5 py-5">
+                     <h5>product name</h5>
+                     <p class="product-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quis vitae ducimus odit consequuntur iusto ad, in recusandae. Accusamus ad aut consequatur error expedita,
+                        earum quasi atque quisquam quibusdam blanditiis!
+                     </p>
+                     <div class="price-size">
+                        <h5 class="mb-2">Select frame size</h5>
+                        <ul class="list-group mt-3 me-5">
+                           <li class="list-group-item">
+                              <input class="form-check-input me-2" type="radio" name="listGroupRadio" value="" id="firstRadio" checked />
+                              <label class="form-check-label" for="firstRadio">M</label>
+                           </li>
+                           <li class="list-group-item">
+                              <input class="form-check-input me-2" type="radio" name="listGroupRadio" value="" id="secondRadio" />
+                              <label class="form-check-label" for="secondRadio">L</label>
+                           </li>
+                           <li class="list-group-item">
+                              <input class="form-check-input me-2" type="radio" name="listGroupRadio" value="" id="thirdRadio" />
+                              <label class="form-check-label" for="thirdRadio">XL</label>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="price text-danger mt-4">
+                        <h3>3,256,00 $</h3>
+                        <button class="btn px-3 py-2">add to card</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ----------  footer ----------- -->
+
+      <footer class="text-bg-dark pt-5 pb-3">
+         <div class="container">
+            <div class="row gx-5 mx-auto">
+               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                  <a href="" class="text-decoration-none text-light">
+                     <h5 class="mb-4">Contact Us</h5>
+                  </a>
+                  <div class="d-flex justify-content-start align-items-start my-2">
+                     <span class="me-2">
+                        <i class="bi bi-geo-alt-fill"></i>
+                     </span>
+                     <span class="fw-light"> USA, WA, Seattle, Raccoon Run, 336 </span>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-start my-2">
+                     <span class="me-2">
+                        <i class="bi bi-envelope-fill"></i>
+                     </span>
+                     <span class="fw-light"> gravitybicycles-info@gmail.com </span>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-start my-2">
+                     <span class="me-2">
+                        <i class="bi bi-telephone-fill"></i>
+                     </span>
+                     <span class="fw-light"> 360-406-2303 </span>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                  <a href="" class="text-decoration-none text-light">
+                     <h5 class="mb-4">Gravity-bicycle</h5>
+                  </a>
+                  <div class="d-flex flex-column align-items-start">
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Terms and Conditions </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Privacy Policy </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Cookie preferences </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>About us </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Shipping</a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Payment Methods </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Jobs </a>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                  <a href="" class="text-decoration-none text-light">
+                     <h5 class="mb-4">Service</h5>
+                  </a>
+                  <div class="d-flex flex-column align-items-start">
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>FAQ</a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Suggestion box</a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Best Price Guarantee </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Return </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Newsletter</a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Reviews </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Help & Service </a>
+                     <a href="" class="text-decoration-none text-light mb-1"><i class="bi bi-chevron-right small me-1"></i>Contact </a>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <h5 class="mb-4">Find us on</h5>
+
+                  <div class="social d-flex flex-wrap">
+                     <a href="#" class="me-4">
+                        <i class="bi bi-facebook"></i>
+                     </a>
+                     <a href="#" class="me-4">
+                        <i class="bi bi-twitter"></i>
+                     </a>
+                     <a href="#" class="me-4">
+                        <i class="bi bi-instagram"></i>
+                     </a>
+                     <a href="#" class="me-3">
+                        <i class="bi bi-linkedin"></i>
+                     </a>
+                  </div>
+                  <div class="trusted mt-4">
+                     <a href="#">
+                        <img src="assets/images/trusted.gif" alt="" />
+                     </a>
+                  </div>
+               </div>
+               <div class="col text-start mt-3">
+                  <p class="fw-lighter">© 1989-2023, H & S Gravity Bicycles GmbH</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

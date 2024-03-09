@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(
+        farthest-side at 20px 20px,
+        #1f252e,
+        #13161c 40%
+    );
+}
+
+.calculator-grid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 18px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1;
+    grid-template-rows: minmax(130px, auto);
+    background: #12151b;
+    border-radius: 15px;
+    border: 5px solid #12151b;
+    box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.05),
+        8px 8px 8px rgba(0, 0, 0, 0.4),
+        inset -4px -4px 3px rgba(255, 255, 255, 0.04),
+        inset 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.output {
+    grid-column: 1 / -1;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #12151b;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.04),
+        7px 7px 7px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+    background: #121212;
+    height: 100%;
+    width: 293px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5px 10px;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.07),
+        1px 1px 1px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display div:last-of-type {
+    display: flex;
+    gap: 7px;
+}
+
+.operator {
+    font-family: "Orbitron", sans-serif;
+    font-size: 25px;
+    color: #229000;
+    text-shadow: 0 0 7px #229000;
+}
+
+.display .previous-operand {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    color: #1b7100;
+    text-shadow: 0 0 7px #1b7100;
+}
+
+.display .current-operand {
+    font-family: "Orbitron", sans-serif;
+    font-size: 25px;
+    color: #229000;
+    text-shadow: 0 0 7px #229000;
+}
+
+.numpad {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    grid-gap: 3px;
+    background: #12151b;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.04),
+        8px 8px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.1s;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.btn-place {
+    padding: 7px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: #101217;
+    box-shadow: inset -2px -2px 2px rgba(255, 255, 255, 0.09),
+        inset 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+.numpad button {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background: #2f4271;
+    border: none;
+    font-size: 20px;
+    color: #1a1a1a;
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 -3px 0px #3d5490, 0 3px 0px #283860;
+    transition: 3ms;
+}
+
+.numpad button:hover {
+    color: #ffffff;
+    text-shadow: 0 0 1px #e2f3ff, 0 0 2px #e2f3ff, 3px 3px 15px #b7e2ff,
+        -3px -3px 15px #b7e2ff;
+    background: #49619e;
+    box-shadow: 0 -3px 0px #5c78c0, 0 3px 0px #3c538f;
+}
+
+.numpad button:active {
+    color: #ffffff;
+    margin: 0.5px 1.5px;
+    font-size: 18px;
+    text-shadow: 0 0 1px #e2f3ff, 0 0 2px #e2f3ff, 3px 3px 15px #b7e2ff,
+        -3px -3px 15px #b7e2ff;
+    background: #49619e;
+    box-shadow: 0 -1.7px 0px #5c78c0, 0 1.7px 0px #3c538f;
+}
